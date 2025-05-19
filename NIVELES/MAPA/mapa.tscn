@@ -1,0 +1,327 @@
+[gd_scene load_steps=29 format=3 uid="uid://b45u7kcuke8hl"]
+
+[ext_resource type="Texture2D" uid="uid://inhvqqkcvs62" path="res://CONTENT/SPRITTES/Edificios/castle_center_E.png" id="1_gdkcy"]
+[ext_resource type="Texture2D" uid="uid://cif85ae75once" path="res://CONTENT/SPRITTES/Terreno/grass_center_E.png" id="2_rkeea"]
+[ext_resource type="Texture2D" uid="uid://fpcwxkgvymjc" path="res://CONTENT/SPRITTES/Terreno/dirt_center_N.png" id="3_icurl"]
+[ext_resource type="PackedScene" uid="uid://vj3tmq8hyar" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/static_body_2d.tscn" id="4_aa6ee"]
+[ext_resource type="PackedScene" uid="uid://c7xlo7rdhu4tv" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno2.tscn" id="5_phyfx"]
+[ext_resource type="Texture2D" uid="uid://dm5ar0veo12cn" path="res://CONTENT/SPRITTES/Terreno/grass_corner_W.png" id="6_r6it7"]
+[ext_resource type="Texture2D" uid="uid://bpd58mkqt3sao" path="res://CONTENT/SPRITTES/Terreno/grass_riverBend_W.png" id="8_ljjcw"]
+[ext_resource type="PackedScene" uid="uid://dfnbsfh1afcqw" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno3.tscn" id="8_phyfx"]
+[ext_resource type="Texture2D" uid="uid://b610reqheygci" path="res://CONTENT/SPRITTES/Terreno/grass_river_S.png" id="9_80yeu"]
+[ext_resource type="PackedScene" uid="uid://bf2kh2s26se0w" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno6.tscn" id="10_icurl"]
+[ext_resource type="Texture2D" uid="uid://d0h3478nb6wdb" path="res://CONTENT/SPRITTES/Terreno/grass_pathCrossing_W.png" id="11_kpg5j"]
+[ext_resource type="PackedScene" uid="uid://dnftr0ghhriau" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno5.tscn" id="13_phyfx"]
+[ext_resource type="PackedScene" uid="uid://1gficphlrxsw" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/rampa1.tscn" id="14_icurl"]
+[ext_resource type="PackedScene" uid="uid://c81xgcjdke8cn" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno4.tscn" id="14_phyfx"]
+[ext_resource type="Texture2D" uid="uid://bsukn0y0v8721" path="res://CONTENT/SPRITTES/Terreno/grass_riverBend_N.png" id="15_qwrrd"]
+[ext_resource type="Texture2D" uid="uid://b3wbcnbi06aof" path="res://CONTENT/SPRITTES/Terreno/grass_river_E.png" id="16_dru3u"]
+[ext_resource type="Texture2D" uid="uid://dwgjlo8ct5mx1" path="res://CONTENT/SPRITTES/Terreno/grass_riverBend_S.png" id="17_ukby8"]
+[ext_resource type="PackedScene" uid="uid://bk8qv8fashltc" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno7.tscn" id="18_icurl"]
+[ext_resource type="PackedScene" uid="uid://cy5o2eh4lbsdq" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno8.tscn" id="19_rkeea"]
+[ext_resource type="Texture2D" uid="uid://df0205gfkhfo" path="res://CONTENT/SPRITTES/Terreno/grass_riverBend_E.png" id="20_y3vwo"]
+[ext_resource type="PackedScene" uid="uid://0kyc78mu0fbi" path="res://CONTENT/SPRITTES/Terreno/terreno con colicion/terreno9.tscn" id="21_rkeea"]
+[ext_resource type="Texture2D" uid="uid://mao5t8bf2njp" path="res://CONTENT/SPRITTES/Edificios/building_doorBeige_N.png" id="23_qtaio"]
+[ext_resource type="Texture2D" uid="uid://ibaof88aoywc" path="res://CONTENT/SPRITTES/Edificios/roof_pointPurple_N.png" id="24_obw0n"]
+[ext_resource type="Texture2D" uid="uid://bfld6btxad8iu" path="res://CONTENT/SPRITTES/Edificios/building_door_E.png" id="25_fiqvn"]
+[ext_resource type="Texture2D" uid="uid://yq4beoeqvmcr" path="res://CONTENT/SPRITTES/Edificios/roof_pointGreen_E.png" id="26_2jpr8"]
+[ext_resource type="PackedScene" uid="uid://fq3vfvgycupx" path="res://CONTENT/SPRITTES/Buttons/Botones_Mobil.tscn" id="27_icurl"]
+[ext_resource type="PackedScene" uid="uid://bwyuf8rk2g51e" path="res://CONTENT/SPRITTES/Personajes/JP1/baco_mapa.tscn" id="27_rkeea"]
+[ext_resource type="Script" uid="uid://b45ich1neefvc" path="res://CONTENT/SPRITTES/Personajes/JP1/camara_tutorial.gd" id="28_icurl"]
+
+[node name="Mapa" type="Node2D"]
+
+[node name="Terreno" type="Node" parent="."]
+
+[node name="CastleCenterE20" type="Sprite2D" parent="Terreno"]
+position = Vector2(559, -287)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE21" type="Sprite2D" parent="Terreno"]
+position = Vector2(676, -237)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE19" type="Sprite2D" parent="Terreno"]
+position = Vector2(450, -237)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE18" type="Sprite2D" parent="Terreno"]
+position = Vector2(345, -193)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE17" type="Sprite2D" parent="Terreno"]
+position = Vector2(221, -124)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE16" type="Sprite2D" parent="Terreno"]
+position = Vector2(111, -68)
+texture = ExtResource("1_gdkcy")
+
+[node name="GrassCenterE6" type="Sprite2D" parent="Terreno"]
+position = Vector2(560, -171)
+texture = ExtResource("2_rkeea")
+
+[node name="DirtCenterN7" type="Sprite2D" parent="Terreno"]
+position = Vector2(891, 10)
+texture = ExtResource("3_icurl")
+
+[node name="GrassCenterE12" type="Sprite2D" parent="Terreno"]
+position = Vector2(890, -103)
+texture = ExtResource("2_rkeea")
+
+[node name="DirtCenterN6" type="Sprite2D" parent="Terreno"]
+position = Vector2(-48, 119)
+scale = Vector2(1, 1.48)
+texture = ExtResource("3_icurl")
+
+[node name="DirtCenterN3" type="Sprite2D" parent="Terreno"]
+position = Vector2(669, -115)
+texture = ExtResource("3_icurl")
+
+[node name="DirtCenterN5" type="Sprite2D" parent="Terreno"]
+position = Vector2(-2, 209)
+texture = ExtResource("3_icurl")
+
+[node name="DirtCenterN2" type="Sprite2D" parent="Terreno"]
+position = Vector2(455, -112)
+texture = ExtResource("3_icurl")
+
+[node name="DirtCenterN" type="Sprite2D" parent="Terreno"]
+position = Vector2(221, -6)
+texture = ExtResource("3_icurl")
+
+[node name="DirtCenterN4" type="Sprite2D" parent="Terreno"]
+position = Vector2(777, 59)
+texture = ExtResource("3_icurl")
+
+[node name="GrassCenterE11" type="Sprite2D" parent="Terreno"]
+position = Vector2(776, -49)
+texture = ExtResource("2_rkeea")
+
+[node name="GrassCenterE5" type="Sprite2D" parent="Terreno"]
+position = Vector2(564, -63)
+texture = ExtResource("2_rkeea")
+
+[node name="StaticBody2D" parent="Terreno" instance=ExtResource("4_aa6ee")]
+position = Vector2(-1, 0)
+
+[node name="StaticBody2D2" parent="Terreno" instance=ExtResource("5_phyfx")]
+position = Vector2(111, 49)
+
+[node name="GrassCornerW" type="Sprite2D" parent="Terreno"]
+position = Vector2(-111, 53)
+texture = ExtResource("6_r6it7")
+
+[node name="GrassCenterE" type="Sprite2D" parent="Terreno"]
+position = Vector2(1, 104)
+texture = ExtResource("2_rkeea")
+
+[node name="StaticBody2D6" parent="Terreno" instance=ExtResource("4_aa6ee")]
+position = Vector2(453, -6)
+
+[node name="GrassCenterE4" type="Sprite2D" parent="Terreno"]
+position = Vector2(335, 48)
+texture = ExtResource("2_rkeea")
+
+[node name="StaticBody2D3" parent="Terreno" instance=ExtResource("8_phyfx")]
+position = Vector2(228, 103)
+
+[node name="GrassRiverBendW" type="Sprite2D" parent="Terreno"]
+position = Vector2(115, 156)
+texture = ExtResource("8_ljjcw")
+
+[node name="GrassCornerW2" type="Sprite2D" parent="Terreno"]
+position = Vector2(6, 210)
+texture = ExtResource("6_r6it7")
+
+[node name="GrassRiverS4" type="Sprite2D" parent="Terreno"]
+position = Vector2(655, 113)
+texture = ExtResource("9_80yeu")
+
+[node name="StaticBody2D7" parent="Terreno" instance=ExtResource("10_icurl")]
+position = Vector2(667, -1)
+
+[node name="GrassPathCrossingW" type="Sprite2D" parent="Terreno"]
+position = Vector2(563, 47)
+texture = ExtResource("11_kpg5j")
+
+[node name="StaticBody2D5" parent="Terreno" instance=ExtResource("13_phyfx")]
+position = Vector2(453, 104)
+
+[node name="StaticBody2D4" parent="Terreno" instance=ExtResource("14_phyfx")]
+position = Vector2(341, 156)
+
+[node name="GrassRiverBendW2" type="Sprite2D" parent="Terreno"]
+position = Vector2(779, 166)
+texture = ExtResource("8_ljjcw")
+
+[node name="GrassRiverS" type="Sprite2D" parent="Terreno"]
+position = Vector2(231, 207)
+texture = ExtResource("9_80yeu")
+
+[node name="CastleCenterE13" type="Sprite2D" parent="Terreno"]
+position = Vector2(990, 145)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE14" type="Sprite2D" parent="Terreno"]
+position = Vector2(1104, 198)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE15" type="Sprite2D" parent="Terreno"]
+position = Vector2(1220, 250)
+texture = ExtResource("1_gdkcy")
+
+[node name="GrassRiverS2" type="Sprite2D" parent="Terreno"]
+position = Vector2(884, 217)
+texture = ExtResource("9_80yeu")
+
+[node name="GrassCenterE2" type="Sprite2D" parent="Terreno"]
+position = Vector2(118, 261)
+texture = ExtResource("2_rkeea")
+
+[node name="StaticBody2D8" parent="Terreno" instance=ExtResource("14_icurl")]
+position = Vector2(675, 104)
+
+[node name="GrassRiverBendN" type="Sprite2D" parent="Terreno"]
+position = Vector2(564, 260)
+texture = ExtResource("15_qwrrd")
+
+[node name="GrassRiverE" type="Sprite2D" parent="Terreno"]
+position = Vector2(458, 309)
+texture = ExtResource("16_dru3u")
+
+[node name="GrassRiverBendS" type="Sprite2D" parent="Terreno"]
+position = Vector2(341, 358)
+texture = ExtResource("17_ukby8")
+
+[node name="StaticBody2D9" parent="Terreno" instance=ExtResource("18_icurl")]
+position = Vector2(785, 265)
+
+[node name="StaticBody2D10" parent="Terreno" instance=ExtResource("19_rkeea")]
+position = Vector2(666, 313)
+
+[node name="GrassRiverBendE" type="Sprite2D" parent="Terreno"]
+position = Vector2(1001, 268)
+texture = ExtResource("20_y3vwo")
+
+[node name="GrassRiverE2" type="Sprite2D" parent="Terreno"]
+position = Vector2(889, 316)
+texture = ExtResource("16_dru3u")
+
+[node name="GrassRiverBendS2" type="Sprite2D" parent="Terreno"]
+position = Vector2(783, 366)
+texture = ExtResource("17_ukby8")
+
+[node name="StaticBody2D11" parent="Terreno" instance=ExtResource("13_phyfx")]
+position = Vector2(564, 364)
+
+[node name="StaticBody2D12" parent="Terreno" instance=ExtResource("21_rkeea")]
+position = Vector2(447, 415)
+
+[node name="GrassCenterE3" type="Sprite2D" parent="Terreno"]
+position = Vector2(231, 413)
+texture = ExtResource("2_rkeea")
+
+[node name="GrassCenterE7" type="Sprite2D" parent="Terreno"]
+position = Vector2(344, 465)
+texture = ExtResource("2_rkeea")
+
+[node name="GrassCenterE8" type="Sprite2D" parent="Terreno"]
+position = Vector2(672, 419)
+texture = ExtResource("2_rkeea")
+
+[node name="GrassCenterE9" type="Sprite2D" parent="Terreno"]
+position = Vector2(560, 470)
+texture = ExtResource("2_rkeea")
+
+[node name="GrassCenterE10" type="Sprite2D" parent="Terreno"]
+position = Vector2(454, 519)
+texture = ExtResource("2_rkeea")
+
+[node name="CastleCenterE12" type="Sprite2D" parent="Terreno"]
+position = Vector2(6, 402)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE" type="Sprite2D" parent="Terreno"]
+position = Vector2(119, 452)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE2" type="Sprite2D" parent="Terreno"]
+position = Vector2(234, 507)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE3" type="Sprite2D" parent="Terreno"]
+position = Vector2(347, 563)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE4" type="Sprite2D" parent="Terreno"]
+position = Vector2(1112, 305)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE5" type="Sprite2D" parent="Terreno"]
+position = Vector2(1003, 358)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE6" type="Sprite2D" parent="Terreno"]
+position = Vector2(894, 409)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE7" type="Sprite2D" parent="Terreno"]
+position = Vector2(785, 461)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE8" type="Sprite2D" parent="Terreno"]
+position = Vector2(673, 513)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE9" type="Sprite2D" parent="Terreno"]
+position = Vector2(565, 564)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE10" type="Sprite2D" parent="Terreno"]
+position = Vector2(460, 617)
+texture = ExtResource("1_gdkcy")
+
+[node name="CastleCenterE11" type="Sprite2D" parent="Terreno"]
+position = Vector2(9, 303)
+texture = ExtResource("1_gdkcy")
+
+[node name="Edificios" type="Node" parent="."]
+
+[node name="BuildingDoorBeigeN" type="Sprite2D" parent="Edificios"]
+position = Vector2(333, -167)
+texture = ExtResource("23_qtaio")
+
+[node name="RoofPointPurpleN" type="Sprite2D" parent="Edificios"]
+position = Vector2(333, -275)
+texture = ExtResource("24_obw0n")
+
+[node name="BuildingDoorE" type="Sprite2D" parent="Edificios"]
+position = Vector2(778, -163)
+texture = ExtResource("25_fiqvn")
+
+[node name="RoofPointGreenE" type="Sprite2D" parent="Edificios"]
+position = Vector2(780, -272)
+texture = ExtResource("26_2jpr8")
+
+[node name="Baco_Mapa" parent="Edificios" instance=ExtResource("27_rkeea")]
+position = Vector2(3, -13)
+scale = Vector2(1.2, 1.2)
+up_direction = Vector2(0.577292, 0.816538)
+floor_max_angle = 3.14159
+safe_margin = 4.1
+
+[node name="LabelNivel" type="Label" parent="Edificios/Baco_Mapa"]
+offset_left = 24.1667
+offset_top = -26.6667
+offset_right = 47.1667
+offset_bottom = -3.66666
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "\"\""
+
+[node name="CanvasLayer" parent="." instance=ExtResource("27_icurl")]
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("seguir_personaje")]
+script = ExtResource("28_icurl")
+seguir_personaje = NodePath("../Edificios/Baco_Mapa")
