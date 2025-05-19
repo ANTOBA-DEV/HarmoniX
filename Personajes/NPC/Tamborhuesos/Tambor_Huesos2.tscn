@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://rvxncbdyqlaj"]
+
+[ext_resource type="Texture2D" uid="uid://ddhv1j8h7gu6y" path="res://CONTENT/SPRITTES/Personajes/NPC/Tamborhuesos/Tamborhuesos_3.png" id="1_2f2ga"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dfn5"]
+size = Vector2(72, 48)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 255
+collision_mask = 255
+
+[node name="Tamborhuesos1" type="Sprite2D" parent="."]
+position = Vector2(7.15256e-07, 1.43051e-06)
+scale = Vector2(0.0956938, 0.0928433)
+texture = ExtResource("1_2f2ga")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 255
+collision_mask = 255
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-12, -48)
+shape = SubResource("RectangleShape2D_7dfn5")

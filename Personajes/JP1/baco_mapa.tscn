@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://bwyuf8rk2g51e"]
+
+[ext_resource type="Texture2D" uid="uid://cxpfj5rvxyl6u" path="res://CONTENT/SPRITTES/Personajes/JP1/Bako_5.png" id="1_j7vye"]
+[ext_resource type="Script" uid="uid://dvsp26xuo7mg7" path="res://CONTENT/SPRITTES/Personajes/JP1/baco_mapa.gd" id="1_tytec"]
+[ext_resource type="Texture2D" uid="uid://58t2ivcpfdua" path="res://CONTENT/SPRITTES/Personajes/JP1/Bako_3.png" id="3_6c1xq"]
+[ext_resource type="Texture2D" uid="uid://c3s2qhb4ssitr" path="res://CONTENT/SPRITTES/Personajes/JP1/Bako_8.png" id="4_k8dtc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tytec"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j7vye")
+}],
+"loop": true,
+"name": &"Estatico",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_6c1xq")
+}],
+"loop": true,
+"name": &"arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_k8dtc")
+}],
+"loop": true,
+"name": &"caminar",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1xq"]
+size = Vector2(5.60237, 4.03905)
+
+[node name="Baco_Mapa" type="CharacterBody2D"]
+script = ExtResource("1_tytec")
+
+[node name="Bako5" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.0952905, 0.116206)
+sprite_frames = SubResource("SpriteFrames_tytec")
+animation = &"caminar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.78496, 1.73308)
+shape = SubResource("RectangleShape2D_6c1xq")

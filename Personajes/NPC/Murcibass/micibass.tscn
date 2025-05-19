@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdbx65mjfax7l"]
+
+[ext_resource type="Texture2D" uid="uid://b028w462lex1c" path="res://CONTENT/SPRITTES/Personajes/NPC/Murcibass/Mucibass_4.png" id="1_5ahai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghydy"]
+size = Vector2(285.19, 307.459)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Mucibass4" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_5ahai")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, 40)
+scale = Vector2(0.0420772, 0.0780591)
+collision_layer = 255
+collision_mask = 255
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2.26649e-05, 409.946)
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_ghydy")
