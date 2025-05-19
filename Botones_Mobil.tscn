@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://fq3vfvgycupx"]
+
+[ext_resource type="Texture2D" uid="uid://cfkjbfh1gswx6" path="res://CONTENT/SPRITTES/Buttons/Sprites/flat-dark/flatDark23.png" id="1_768i4"]
+[ext_resource type="Texture2D" uid="uid://tcxa5lu0nu0s" path="res://CONTENT/SPRITTES/Buttons/Sprites/flat-dark/flatDark26.png" id="2_c352e"]
+[ext_resource type="Texture2D" uid="uid://d06w2pgcire3i" path="res://CONTENT/SPRITTES/Buttons/Sprites/flat-dark/flatDark24.png" id="3_0jk4e"]
+[ext_resource type="Texture2D" uid="uid://bt3ha24oy46i1" path="res://CONTENT/SPRITTES/Buttons/Sprites/flat-dark/flatDark25.png" id="4_bdxiw"]
+[ext_resource type="Texture2D" uid="uid://cp823aulefp72" path="res://CONTENT/SPRITTES/Buttons/Sprites/flat-dark/flatDark19.png" id="5_c352e"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Izquierda" type="TouchScreenButton" parent="."]
+position = Vector2(32, 464)
+texture_normal = ExtResource("1_768i4")
+texture_pressed = ExtResource("1_768i4")
+action = "izquierda"
+
+[node name="Abajo" type="TouchScreenButton" parent="."]
+position = Vector2(112, 544)
+texture_normal = ExtResource("2_c352e")
+texture_pressed = ExtResource("2_c352e")
+action = "abajo"
+
+[node name="Derecha" type="TouchScreenButton" parent="."]
+position = Vector2(192, 464)
+texture_normal = ExtResource("3_0jk4e")
+texture_pressed = ExtResource("3_0jk4e")
+action = "derecha"
+
+[node name="Arriba" type="TouchScreenButton" parent="."]
+position = Vector2(112, 384)
+texture_normal = ExtResource("4_bdxiw")
+texture_pressed = ExtResource("4_bdxiw")
+action = "arriba"
+
+[node name="Enter" type="TouchScreenButton" parent="."]
+position = Vector2(992, 480)
+scale = Vector2(1.33333, 1.33333)
+texture_normal = ExtResource("5_c352e")
+texture_pressed = ExtResource("5_c352e")
+action = "enter"
